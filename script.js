@@ -22,7 +22,7 @@ const h = canvas.height;
 const imageData = ctx.createImageData(w, h);
 const data = imageData.data
 
-const iters = 10;
+const iters = 1;
 const currentPixelComplex = new Complex(0, 0);
 
 const scaleFactor = 0.005;
