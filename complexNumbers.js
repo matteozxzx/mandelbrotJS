@@ -26,12 +26,7 @@ export class Complex{
             z = z.square().add(c);
             i+=1
         }
-        if(i == iterations){
-            return true;
-        }
-        else{
-            return false;
-        }
+        return i;
     }
 
     sqrMagnitude(){
