@@ -15,26 +15,14 @@ export function initControls(canvas, onViewChange, onParamChange){
         mouseY = event.clientY - rect.top;
     })
     canvas.addEventListener('click', (event) =>{
-        
-        
         onViewChange(mouseX, mouseY)
     })
-    xOffsetSlider.addEventListener('input', (event) => {
-        const newValue = parseFloat(event.target.value);
 
-        onParamChange('xOffset', newValue);
-
-        console.log(10);
-        
-    }); 
-    yOffsetSlider.addEventListener('input', (event) => {
-        const newValue = parseFloat(event.target.value);
-
-        onParamChange('yOffset', newValue);
-
-        console.log(10);
-        
-    }); 
+    
+    canvas.addEventListener('click', (event) =>{
+        onViewChange(mouseX, mouseY)
+    })
+    
     scaleFactorSlider.addEventListener('input', (event) => {
         const newValue = parseFloat(event.target.value);
 
